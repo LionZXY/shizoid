@@ -1,7 +1,10 @@
 require('dotenv').config();
 
+console.log("Start application");
+
 const Telegraf = require('telegraf');
 const { config } = require('../config/config.js');
+console.log(config);
 const models = require('../models');
 const forgetMiddleware = require('./middlewares/forgetMiddleware.js');
 const setupCommands = require('./commands/index.js');
